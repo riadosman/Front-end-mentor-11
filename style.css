@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-blackish-blue:hsl(219, 29%, 14%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --White: hsl(0, 0%, 100%);
+
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--Light-grayish-blue);
+}
+main{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 250px 250px;
+    margin: 0px 100px;
+}
+.Daniel,
+.Jonathan,
+.Kira,
+.Jeanette,
+.Patrick{
+    padding: 20px;
+}
+.first{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: var(--White);
+}
+.second{
+    font-size: 13px;
+    margin-top: 10px;
+    color: var(--White);
+    opacity: 70%;
+}
+.info{
+    color: var(--White);
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+.info p:nth-child(2){
+    opacity: 50%;
+}
+.Daniel{
+    border-radius: 5px;
+    background-color: var(--Moderate-violet);
+    grid-column: 1/3;
+}
+.Jonathan{
+    border-radius: 5px;
+    background-color: var(--Very-dark-grayish-blue);
+}
+.Kira{
+    border-radius: 5px;
+    background-color: var(--White);
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+.Jeanette{
+    border-radius: 5px;
+    grid-column: 1/2;
+    background-color: var(--White);
+}
+.Patrick{
+    border-radius: 5px;
+    background-color: var(--Very-dark-blackish-blue);
+    grid-column: 2/4;
+}
+
+.name img{
+    border-radius: 50%;
+    width: 30px;
+    border: 1px solid white;
+}
+.name h1{
+    display: inline-block;
+    font-size: 1rem;
+    color: white;
+}
+.name .info{
+    display: inline-block;
+}
+.black p{
+    color: #000;
+}
+.black .second{
+    margin-top: 0px;
+    opacity: 50%;
+}
+.black .first{
+    margin: 20px 0;
+    font-size: 1.4rem;
+}
+@media (max-width:375px){
+    body{
+        height: 100%;
+    }
+    main{
+        display: inline-block;
+        margin: 60px 30px;
+    }
+    .Daniel,
+    .Jonathan,
+    .Kira,
+    .Jeanette,
+    .Patrick{
+        margin-top: 10px;
+    }
+}
