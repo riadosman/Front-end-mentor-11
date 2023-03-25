@@ -35,10 +35,18 @@ main{
 .Patrick{
     padding: 20px;
 }
+.Daniel img:last-child{
+    width: 100px;
+    position: absolute;
+    left: 35%;
+    top: 14%;
+}
 .first{
     margin-top: 10px;
     font-size: 1.2rem;
     color: var(--White);
+    position: relative;
+    z-index: 100;
 }
 .second{
     font-size: 13px;
@@ -80,7 +88,7 @@ main{
     grid-column: 2/4;
 }
 
-.name img{
+.name img:first-child{
     border-radius: 50%;
     width: 30px;
     border: 1px solid white;
@@ -94,7 +102,7 @@ main{
     display: inline-block;
 }
 .black p{
-    color: #000;
+    color:var(--Very-dark-blackish-blue);
 }
 .black .second{
     margin-top: 0px;
